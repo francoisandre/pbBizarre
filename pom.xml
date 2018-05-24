@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fr.gouv.education.sirhen.ct</groupId>
+	<artifactId>ct-utils-generation-jeux-test</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<parent>
+		<groupId>fr.gouv.education.sirhen.programme</groupId>
+		<artifactId>programme-sirhen-j2ee-mapi</artifactId>
+		<version>6.V3.0.4</version>
+	</parent>
+
+	<properties>
+		<etat-civil-externe-client-version>1.0</etat-civil-externe-client-version>
+		<gestion-etat-civil-externe-client-version>1.0</gestion-etat-civil-externe-client-version>
+	</properties>
+
+	<dependencies>
+		<dependency> <groupId>fr.gouv.education.sirhen.mas.client.standalone</groupId> <artifactId>etat-civil-externe-client</artifactId> <version>${etat-civil-externe-client-version}</version> 
+			</dependency> 
+		<!-- <dependency>
+			<groupId>fr.gouv.education.sirhen.mas.client.standalone</groupId>
+			<artifactId>gestion-etat-civil-externe-client</artifactId>
+			<version>${gestion-etat-civil-externe-client-version}</version>
+		</dependency> -->
+
+		<dependency>
+			<groupId>fr.gouv.education.sirhen.ct</groupId>
+			<artifactId>ct-annuaire-service</artifactId>
+			<version>${ct-annuaire-service-version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-configuration2 -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-configuration2</artifactId>
+    <version>2.2</version>
+</dependency>
+		
+
+	</dependencies>
+
+</project>
